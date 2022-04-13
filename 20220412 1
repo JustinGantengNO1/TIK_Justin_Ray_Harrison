@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   
+    
+    int nilai;
+    cout<<"Masukkan Nilai = ";cin>>nilai; 
+    
+    if ( nilai >100 ){
+        cout<<"Di luar Jangkauan";
+    }
+    else if ( nilai >=90 ){
+        cout<<"Sangat Memuaskan";
+    }
+    else if ( nilai >=80 ){
+        cout<<"Memuaskan";
+    }
+    else if ( nilai >=75 ){
+        cout<<"Cukup";
+    }
+    else if ( nilai <0 ){
+        cout<<"Di Luar Jangkauan";
+    }
+    else {
+        cout<<"Tidak Lulus";
+    }
+}
