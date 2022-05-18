@@ -1,1 +1,47 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+int main() {
+
+    int a, b;
+    float nilai1, nilai2;
+    string c[8] = {"", "mm", "cm", "dm", "m", "dam", "hm", "km"};
+
+    cout<<"Pilih satuan awal anda : "<<endl;
+    cout<<"1. mm"<<endl;
+    cout<<"2. cm"<<endl;
+    cout<<"3. dm"<<endl;
+    cout<<"4. m"<<endl;
+    cout<<"5. dam"<<endl;
+    cout<<"6. hm"<<endl;
+    cout<<"7. km"<<endl;
+    cout<<"Satuan yang dipilih: ";cin>>a;
+
+    cout<<"Masukkan panjang: ";cin>>nilai1;
+
+    cout<<"Nilai awal anda adalah "<<nilai1<<c[a]<<endl;
+
+    cout<<"Pilih satuan yang ingin dikonservasikan : "<<endl;
+    cout<<"1. mm"<<endl;
+    cout<<"2. cm"<<endl;
+    cout<<"3. dm"<<endl;
+    cout<<"4. m"<<endl;
+    cout<<"5. dam"<<endl;
+    cout<<"6. hm"<<endl;
+    cout<<"7. km"<<endl;
+    cout<<"Satuan yang dipilih: ";cin>>b;
+
+    if(a<b){
+    int temp = b-a;
+    cout<<"Hasil "<<nilai1/pow(10,temp)<<" "<<c[b];
+    }
+    else if(a>b){
+    int temp = a-b;
+    cout<<"Hasil "<<nilai1*pow(10,temp)<<" "<<c[b];
+    }
+    else if(a==b){
+    cout<<"Hasil "<<a<<" "<<c[a];
+    }
+}
 
