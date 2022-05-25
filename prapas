@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{ 
+    float nilai1;
+    cout<<"Masukkan Nilai 1 = " ;cin>>nilai1;
+    
+    float nilai2;
+    cout<<"Masukkan Nilai 2 = " ;cin>>nilai2;
+    
+    float nilai3;
+    cout<<"Masukkan Nilai 3 = " ;cin>>nilai3;
+    
+    float nilai4;
+    cout<<"Masukkan Nilai 4 = " ;cin>>nilai4;
+    
+    float  nilai5;
+    cout<<"Masukkan Nilai 5 = " ;cin>>nilai5;
+    
+    cout<<"Mean = " ;
+    cout<< ( nilai1 + nilai2 + nilai3 + nilai4 + nilai5 )/5;
+    
+}
